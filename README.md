@@ -1,158 +1,66 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Snake Game
 
-# C extensions
-*.so
+A classic Snake game implementation built with Python and Turtle graphics. This project recreates the iconic arcade game with modern features and smooth gameplay.
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+## Features
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+- Classic Snake gameplay with smooth movement
+- Score tracking system with high score persistence
+- Food spawning mechanics
+- Collision detection with walls and self
+- Automatic game reset on collision
+- Clean and intuitive controls
+- High score tracking across game sessions
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+## Requirements
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
+- Python 3.x
+- Turtle graphics (built into Python standard library)
 
-# Translations
-*.mo
-*.pot
+## Installation
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+1. Clone this repository:
 
-# Flask stuff:
-instance/
-.webassets-cache
+```bash
+git clone https://github.com/<username>/snake-game.git
+cd snake-game
+```
 
-# Scrapy stuff:
-.scrapy
+## Usage
 
-# Sphinx documentation
-docs/_build/
+Run the game:
 
-# PyBuilder
-.pybuilder/
-target/
+```bash
+python main.py
+```
 
-# Jupyter Notebook
-.ipynb_checkpoints
+### Controls
 
-# IPython
-profile_default/
-ipython_config.py
+- Up Arrow: Move snake up
+- Down Arrow: Move snake down
+- Left Arrow: Move snake left
+- Right Arrow: Move snake right
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+### Game Rules
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+- Control the snake to eat the blue food
+- Each food eaten increases your score by 1
+- The snake grows longer with each food eaten
+- Game resets if the snake hits the wall or itself
+- Try to beat your high score!
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+## Project Structure
 
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
-.pdm.toml
-.pdm-python
-.pdm-build/
+- `main.py`: Main game loop and initialization
+- `snake.py`: Snake class implementation
+- `food.py`: Food class implementation
+- `scoreboard.py`: Score tracking and display
+- `data.txt`: High score storage
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+## Contributing
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+Feel free to submit issues and enhancement requests!
 
-# SageMath parsed files
-*.sage.py
+## License
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# pycharm
-.idea/
+This project is licensed under the MIT License - see the LICENSE file for details.
