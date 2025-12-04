@@ -22,7 +22,7 @@ A classic Snake game implementation built with Python and Turtle graphics. This 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/momed-ali01/snake-game.git
+git clone https://github.com/<username>/snake-game.git
 cd snake-game
 ```
 
